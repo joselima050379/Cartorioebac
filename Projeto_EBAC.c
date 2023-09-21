@@ -1,7 +1,7 @@
-#include <stdio.h> //biblioteca de comunicaÃ§Ã£o com o usuÃ¡rio
-#include <stdlib.h> //biblioteca de alocaÃ§Ã£o de espaÃ§o em memÃ³ria
-#include <locale.h> //biblioteca de alocaÃ§Ãµes de texto por regiÃ£o
-#include <string.h> //biblioteca responsÃ¡vel por cuidar das string
+#include <stdio.h>  //biblioteca de comunicação com o usuário
+#include <stdlib.h> //biblioteca de alocação de espaço e memoria
+#include <locale.h> //biblioteca de alocação de ajuste de texto por região
+#include <string.h> //biblioteca responsavel por cuidar das string
 		
 int registro() // Função responsável por cadastra os usuários no sistema
 {
@@ -128,7 +128,9 @@ int main()
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
 		printf("\t3 - Deletar nomes\n\n"); 
+		printf("\t4 - sair do sistema\n\n ");
 		printf("Opção: ");//fim do menu
+		
 				
 		scanf("%d", &opcao); //armazenando a escolha do usuÃ¡rio
 		
@@ -146,6 +148,11 @@ int main()
 		
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 		
 			default:
